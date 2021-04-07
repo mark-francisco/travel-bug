@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# seed data
+User.create!(:first_name => "Mark", :last_name => "Francisco", :username => "mark", :email => "m@example.com", :password => "password")
+User.create!(:first_name => "Test", :last_name => "User", :username => "username2", :email => "t@example.com", :password => "password")
