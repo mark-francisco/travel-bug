@@ -1,0 +1,3 @@
+@stops.map do |stop|
+  render :partial => "stop.json.jb", :locals => { :stop => stop }
+end

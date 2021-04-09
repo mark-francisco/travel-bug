@@ -21,5 +21,11 @@ Rails.application.routes.draw do
 
     # DESTINATIONS
     get "/destinations" => "destinations#index"
+
+    # STOPS
+    get "/stops" => "stops#index"
+    post "/stops" => "stops#create"
+    patch "/stops/:id" => "stops#update"
+    delete "/stops/:id" => "stops#destroy"
   end
 end

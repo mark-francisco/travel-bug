@@ -1,0 +1,6 @@
+{
+  :trip_id => stop.trip_id,
+  :destination_id => stop.destination_id,
+  :start_date => stop.start_date,
+  :end_date => stop.end_date,
+}
