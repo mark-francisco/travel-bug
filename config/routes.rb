@@ -24,6 +24,7 @@ Rails.application.routes.draw do
 
     # STOPS
     get "/stops" => "stops#index"
+    get "/stops/:id" => "stops#show"
     post "/stops" => "stops#create"
     patch "/stops/:id" => "stops#update"
     delete "/stops/:id" => "stops#destroy"
