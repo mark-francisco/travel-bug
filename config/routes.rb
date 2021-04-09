@@ -18,5 +18,8 @@ Rails.application.routes.draw do
 
     # SESSIONS
     post "/sessions" => "sessions#create"
+
+    # DESTINATIONS
+    get "/destinations" => "destinations#index"
   end
 end

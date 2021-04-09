@@ -1,0 +1,9 @@
+@destinations.map do |destination|
+  {
+    :id => destination.id,
+    :name => destination.name,
+    :country => destination.country,
+    :lat => destination.lat,
+    :lng => destination.lng,
+  }
+end
