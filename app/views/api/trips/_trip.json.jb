@@ -1,0 +1,12 @@
+{
+  :id => trip.id,
+  :title => trip.title,
+  :owner_id => trip.owner_id,
+  :collaborator_id => trip.collaborator_id,
+  :description => trip.description,
+  :completed? => trip.completed?,
+  :start_date => trip.start_date,
+  :end_date => trip.end_date,
+  :logistics => trip.logistics,
+  :ideas => trip.ideas,
+}

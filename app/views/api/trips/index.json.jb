@@ -1,0 +1,3 @@
+@trips.map do |trip|
+  render :partial => "trip.json.jb", :locals => { :trip => trip }
+end
