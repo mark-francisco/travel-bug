@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_09_190131) do
+ActiveRecord::Schema.define(version: 2021_04_14_200813) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,9 +38,7 @@ ActiveRecord::Schema.define(version: 2021_04_09_190131) do
     t.integer "owner_id"
     t.integer "collaborator_id"
     t.string "description"
-    t.boolean "completed?"
-    t.date "start_date"
-    t.date "end_date"
+    t.boolean "isComplete"
     t.string "logistics", array: true
     t.string "ideas", array: true
     t.datetime "created_at", precision: 6, null: false

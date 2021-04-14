@@ -1,0 +1,1 @@
+render :partial => "trip.json.jb", :locals => { :trip => @trip }
