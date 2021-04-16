@@ -5,4 +5,6 @@
   :username => user.username,
   :email => user.email,
   :password_digest => user.password_digest,
+  :trips_owned => user.trips_owned,
+  :trips_collaborated => user.trips_collaborated,
 }

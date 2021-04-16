@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     get "/users" => "users#index"
     # show own User portal
     get "/users/:id" => "users#show"
+    delete "/users/:id" => "users#destroy"
 
     # SESSIONS
     post "/sessions" => "sessions#create"

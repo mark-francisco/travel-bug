@@ -20,7 +20,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  # "current_user" method is available in all Rails views.
+  # "current_user" method is also available in all Rails views.
   helper_method :current_user
 
   def authenticate_user

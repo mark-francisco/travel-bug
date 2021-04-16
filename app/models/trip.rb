@@ -1,5 +1,6 @@
 class Trip < ApplicationRecord
-  has_many :stops
+  # if a Trip is destroyed, all of its dependent Stops will also be destroyed
+  has_many :stops, :dependent => :destroy
 
   # def stops
   #   Stop.where(:trip_id => id)

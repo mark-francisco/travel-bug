@@ -1,4 +1,7 @@
 class Stop < ApplicationRecord
+  validates :trip_id, :presence => true
+  validates :destination_id, :presence => true
+
   belongs_to :destination
 
   # def destination
