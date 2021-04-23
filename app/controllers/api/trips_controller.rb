@@ -1,5 +1,6 @@
 class Api::TripsController < ApplicationController
   # implement Authentication/Authorization only on Trips for now
+  # you gotta be logged in to see, add, update, or delete Trips
   before_action :authenticate_user
 
   def index

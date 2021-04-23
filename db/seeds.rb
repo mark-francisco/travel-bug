@@ -30,9 +30,7 @@
 #   :owner_id => 1,
 #   :collaborator_id => 2,
 #   :description => "gonna have a good time for a bit",
-#   :completed? => false,
-#   :start_date => DateTime.new(2021, 7, 1),
-#   :end_date => DateTime.new(2021, 7, 13),
+#   :isComplete => false,
 #   :logistics => ["fly in on 7/1", "bring your passport", "rent a car"],
 #   :ideas => ["go camping in canada", "go to that sourdough place", "chill for a couple days at XYZ"],
 # )
@@ -40,10 +38,8 @@
 #   :title => "US city break",
 #   :owner_id => 2,
 #   :collaborator_id => 3,
-#   :description => "experience urban stuff",
-#   :completed? => true,
-#   :start_date => DateTime.new(2019, 8, 2),
-#   :end_date => DateTime.new(2019, 8, 7),
+#   :description => "birthplace of celery",
+#   :isComplete => true,
 #   :logistics => ["fly into Midway", "stay not downtown", "fly out on Sunday AM"],
 #   :ideas => ["spend 3 days at The Bean", "do touristy activities", "go to a few museums"],
 # )
