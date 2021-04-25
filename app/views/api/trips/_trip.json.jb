@@ -2,13 +2,15 @@
   :id => trip.id,
   :title => trip.title,
   :owner_id => trip.owner_id,
+  :owner => trip.owner,
   :collaborator_id => trip.collaborator_id,
+  :collaborator => trip.collaborator,
   :description => trip.description,
   :isComplete => trip.isComplete,
   :logistics => trip.logistics,
   :ideas => trip.ideas,
-  :stops => trip.stops,
-  :owner => trip.owner,
-  :collaborator => trip.collaborator,
-  :destinations => trip.destinations,
+  :stops => trip.stops.map do |stop|
+    render :partial => "/api/stops/stop", :locals => { :stop => stop }
+  end,
+# :destinations => trip.destinations,
 }
