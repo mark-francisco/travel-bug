@@ -2,6 +2,7 @@
   :id => stop.id,
   :trip_id => stop.trip_id,
   :destination_id => stop.destination_id,
+  :destination => stop.destination,
   :start_date => stop.start_date,
   :end_date => stop.end_date,
 }
