@@ -1,4 +1,5 @@
 {
+  :current_user => current_user,
   :id => trip.id,
   :title => trip.title,
   :owner_id => trip.owner_id,
