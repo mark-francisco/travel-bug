@@ -47,3 +47,4 @@ gem 'jb'
 
 # "jwt" gem used for user authentication: verify active session
 gem 'jwt'
+gem "dockerfile-rails", ">= 1.6", :group => :development
