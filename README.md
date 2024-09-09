@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo contains the back-end code for Travel Bug.
 
-Things you may want to cover:
+It consists of a Ruby on Rails API, which is deployed at https://travel-bug.fly.dev/
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The front-end of this application is built on Vue, in this repo:
+https://github.com/mark-francisco/travel-bug-vue-app
