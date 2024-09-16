@@ -1,8 +1,9 @@
 # README
 
-This repo contains the back-end code for Travel Bug.
+This repo contains the Ruby on Rails back-end for Travel Bug.
 
-It consists of a Ruby on Rails API, which is deployed at https://travel-bug.fly.dev/
+The Rails API is deployed at https://travel-bug.fly.dev/
 
-The front-end of this application is built on Vue, in this repo:
-https://github.com/mark-francisco/travel-bug-vue-app
+The front-end is built on Vue. See https://github.com/mark-francisco/travel-bug-vue-app
+
+The full app can be viewed here: https://travel-bug-vue-app.netlify.app
