@@ -24,25 +24,27 @@ end
 user = User.create!(:first_name => "Mark", :last_name => "Francisco", :username => "mark", :email => "m@example.com", :password => "password")
 user2 = User.create!(:first_name => "Jamie", :last_name => "Jones", :username => "jonesy", :email => "j@example.com", :password => "password")
 
-trip = Trip.create!(
-  :title => "Olympic National Park",
-  :owner_id => user.id,
-  :collaborator_id => user2.id,
-  :description => "Hiking trip -- otherwordly landscapes",
-  :isComplete => true,
-  :logistics => ["Rent a car", "Book ferry tickets", "Book accommodation"],
-  :ideas => ["Bonfire at Ruby Beach", "Lunch at local diner", "Hoh Rainforest", "Hike around Hurricane Ridge mountaintop", "Twilight filming site in Forks town"],
-)
+if user && user2
+  trip = Trip.create!(
+    :title => "Olympic National Park",
+    :owner_id => user.id,
+    :collaborator_id => user2.id,
+    :description => "Hiking trip -- otherwordly landscapes",
+    :isComplete => true,
+    :logistics => ["Rent a car", "Book ferry tickets", "Book accommodation"],
+    :ideas => ["Bonfire at Ruby Beach", "Lunch at local diner", "Hoh Rainforest", "Hike around Hurricane Ridge mountaintop", "Twilight filming site in Forks town"],
+  )
 
-Stop.create!(
-  :trip_id => trip.id,
-  :destination_id => Destination.first.id,
-  :start_date => DateTime.new(2021, 7, 1),
-  :end_date => DateTime.new(2021, 7, 7),
-)
-Stop.create!(
-  :trip_id => trip.id,
-  :destination_id => Destination.second.id,
-  :start_date => DateTime.new(2021, 7, 1),
-  :end_date => DateTime.new(2021, 7, 7),
-)
+  Stop.create!(
+    :trip_id => trip.id,
+    :destination_id => Destination.first.id,
+    :start_date => DateTime.new(2021, 7, 1),
+    :end_date => DateTime.new(2021, 7, 7),
+  )
+  Stop.create!(
+    :trip_id => trip.id,
+    :destination_id => Destination.second.id,
+    :start_date => DateTime.new(2021, 7, 1),
+    :end_date => DateTime.new(2021, 7, 7),
+  )
+end
