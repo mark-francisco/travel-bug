@@ -36,13 +36,13 @@ trip = Trip.create!(
 
 Stop.create!(
   :trip_id => trip.id,
-  :destination_id => Destination.first,
+  :destination_id => Destination.first.id,
   :start_date => DateTime.new(2021, 7, 1),
   :end_date => DateTime.new(2021, 7, 7),
 )
 Stop.create!(
   :trip_id => trip.id,
-  :destination_id => Destination.second,
+  :destination_id => Destination.second.id,
   :start_date => DateTime.new(2021, 7, 1),
   :end_date => DateTime.new(2021, 7, 7),
 )
