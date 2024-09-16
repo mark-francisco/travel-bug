@@ -32,7 +32,7 @@ if user && user2
     :description => "Hiking trip -- otherwordly landscapes",
     :isComplete => true,
     :logistics => ["Rent a car", "Book ferry tickets", "Book accommodation"],
-    :ideas => ["Bonfire at Ruby Beach", "Lunch at local diner", "Hoh Rainforest", "Hike around Hurricane Ridge mountaintop", "Twilight filming site in Forks town"],
+    :ideas => ["Bonfire at Ruby Beach", "Lunch at local diner", "Hoh Rainforest", "Hike around Hurricane Ridge mountaintop", "Twilight filming site in Forks town"]
   )
 
   Stop.create!(
@@ -47,4 +47,6 @@ if user && user2
     :start_date => DateTime.new(2021, 7, 1),
     :end_date => DateTime.new(2021, 7, 7),
   )
+
+  pp "Successfully seeded data!"
 end
