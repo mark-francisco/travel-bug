@@ -21,27 +21,27 @@ CSV.foreach(Rails.root.join("lib/seed-data-from-simple-maps/worldcities-1mil-and
 end
 
 # Travel Bug seed data
-User.create!(:first_name => "Mark", :last_name => "Francisco", :username => "mark", :email => "m@example.com", :password => "password")
-User.create!(:first_name => "Jamie", :last_name => "Jones", :username => "jonesy", :email => "j@example.com", :password => "password")
+user = User.create!(:first_name => "Mark", :last_name => "Francisco", :username => "mark", :email => "m@example.com", :password => "password")
+user2 = User.create!(:first_name => "Jamie", :last_name => "Jones", :username => "jonesy", :email => "j@example.com", :password => "password")
 
-Trip.create!(
+trip = Trip.create!(
   :title => "Olympic National Park",
-  :owner_id => 1,
-  :collaborator_id => 2,
-  :description => "birthplace of celery",
+  :owner_id => user.id,
+  :collaborator_id => user2.id,
+  :description => "Hiking trip -- otherwordly landscapes",
   :isComplete => true,
-  :logistics => ["rent a car and ferry over", "leave no trace"],
-  :ideas => ["couple days here", "couple days there", "couple days everywhere"],
+  :logistics => ["Rent a car", "Book ferry tickets", "Book accommodation"],
+  :ideas => ["Bonfire at Ruby Beach", "Lunch at local diner", "Hoh Rainforest", "Hike around Hurricane Ridge mountaintop", "Twilight filming site in Forks town"],
 )
 
 Stop.create!(
-  :trip_id => 1,
+  :trip_id => trip.id,
   :destination_id => 2,
   :start_date => DateTime.new(2021, 7, 1),
   :end_date => DateTime.new(2021, 7, 7),
 )
 Stop.create!(
-  :trip_id => 1,
+  :trip_id => trip.id,
   :destination_id => 3,
   :start_date => DateTime.new(2021, 7, 1),
   :end_date => DateTime.new(2021, 7, 7),
